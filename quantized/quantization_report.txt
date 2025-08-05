@@ -1,0 +1,30 @@
+Quantization Report
+==================================================
+
+Timestamp: 2025-05-22 03:19:00
+Model: models/checkpoints/checkpoint_epoch_2_17.0677.pth
+Output: output/quantized_pfld_1
+Landmarks: 98
+Image Size: 112
+
+Metrics:
+------------------------------
+
+float Model:
+  Loss: 5.7305
+  L2 Distance: 1.8200
+  NME: 0.6208
+  Samples: 500
+
+ptq Model:
+  Loss: 5.7160
+  L2 Distance: 1.8091
+  NME: 0.6183
+  Samples: 500
+
+Additional Information:
+------------------------------
+quantization_mode: ptq
+calib_samples: 1000
+total_time_seconds: 304.61407685279846
+xmodel_path: output/quantized_pfld_1/pfld_detector.xmodel

@@ -1,0 +1,13 @@
+# pfld.yaml - Configuration for PFLD quantization and deployment
+
+num_landmarks: 98          # Số lượng điểm landmark trên khuôn mặt
+image_size: 112            # Kích thước ảnh đầu vào (width = height)
+
+# Optional - bạn có thể bổ sung thêm nếu cần thiết
+batch_size: 8              # Batch size dùng trong QAT
+learning_rate: 0.00001     # Learning rate cho QAT
+weight_decay: 0.0001       # Weight decay cho QAT
+epochs: 3                  # Số epoch QAT nếu mode = qat hoặc auto
+
+# Thông tin thêm (sẽ ghi lại vào báo cáo nếu có)
+description: "PFLD landmark model for face alignment, optimized for KV260 with DPUCZDX8G"

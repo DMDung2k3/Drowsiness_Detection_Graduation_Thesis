@@ -1,0 +1,19 @@
+model:
+  name: DPUPFLDInference
+  num_landmarks: 196
+  image_size: 112
+  leaky_slope: 0.1015625
+quantization:
+  bitwidth: 8
+  calibration_samples: 1000
+  mode: auto
+dataset:
+  train_list: ../data/train_data/list.txt
+  test_list: ../data/test_data/list.txt
+  image_size: 112
+  normalize:
+    mean: [0, 0, 0]
+    std: [1, 1, 1]
+  augment:
+    enable: true
+    prob: 0.7

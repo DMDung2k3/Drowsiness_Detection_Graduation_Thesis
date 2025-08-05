@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-05-22 03:19:00",
+  "model_path": "models/checkpoints/checkpoint_epoch_2_17.0677.pth",
+  "output_dir": "output/quantized_pfld_1",
+  "num_landmarks": 98,
+  "image_size": 112,
+  "metrics": {
+    "float": {
+      "loss": 5.730455983147025,
+      "l2_distant": 1.8199905344843865,
+      "nme": 0.6208044826388359,
+      "num_samples": 500
+    },
+    "ptq": {
+      "loss": 5.716020135072991,
+      "l2_distant": 1.8091114487200974,
+      "nme": 0.6183164792060852,
+      "num_samples": 500
+    }
+  },
+  "additional_info": {
+    "quantization_mode": "ptq",
+    "calib_samples": 1000,
+    "total_time_seconds": 304.61407685279846,
+    "xmodel_path": "output/quantized_pfld_1/pfld_detector.xmodel"
+  }
+}
